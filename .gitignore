@@ -1,0 +1,51 @@
+# Compiled source files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.obj
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Node modules
+node_modules/
+
+# Python virtual environments
+venv/
+env/
+
+# Build directories
+build/
+dist/
+out/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Coverage reports
+coverage/
+*.coverage
+
+# Test output
