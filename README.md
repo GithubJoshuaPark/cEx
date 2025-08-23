@@ -56,16 +56,29 @@ or
    <br>
    마. Create a Simple C Program (ex: main.c)
 
+   ---
+   <br>
+   바. Manul Compilation Steps
 
-   
    ```bash
-   main.c file shall be 
-      |- ( preprocessing: gcc -E main.c -o main.i )
-      |- main.i // this file is preprocessed file
-            |- ( compiling: gcc -S main.i -o main.s   or  gcc -S main.c -o main.s )
-            |- main.s // this file is assemblier file fiting of the current OS
-               |- ( assembling: gcc -c main.s -o main.o or gcc -c main.c -o main.o )
-               |- main.o // this file is machine readable binary file
-                     |- ( Linking: gcc main.o -o executable or gcc main.c -o executable )
-                     |- main.exe // this file is runnable file by windows os
+   # Preprocessing
+   gcc -E main.c -o main.i
+
+   # Compiling to assembly
+   gcc -S main.i -o main.s
+   # or directly: gcc -S main.c -o main.s
+
+   # Assembling to object file
+   gcc -c main.s -o main.o
+   # or directly: gcc -c main.c -o main.o
+
+   # Linking to executable
+   gcc main.o -o main.exe
+   # or directly: gcc main.c -o main.exe
+
+   # Run the executable
+   ./main.exe
    ```
+
+   ### vsCode Extension, "Hex Editor" 설치
+   > main.o 파일을 오른쪽 클릭 → "Open With..." → "Hex Editor"로 선택

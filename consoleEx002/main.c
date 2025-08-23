@@ -5,6 +5,7 @@ void printLine(const char *line) {
 }
 
 int main() {
-    printLine("Hello, Joshua! Welcome to C programming.");
+    printLine("<< consoleEx002 project >>");
+    printLine("Hello, Joshua! Welcome to C programming");
     return 0;
 }
