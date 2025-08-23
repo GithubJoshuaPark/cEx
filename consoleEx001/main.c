@@ -5,6 +5,6 @@ void printLine(const char *line) {
 }
 
 int main() {
-    printLine("Hello, World!");
+    printLine("Hello, Joshua!");
     return 0;
 }

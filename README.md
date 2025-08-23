@@ -5,7 +5,7 @@
    and use Dev-C++ for c-language coding
 or 
    ---
-1. Download [msys2-x86_64-20250622.exe](https://www.msys2.org/) and install it at C:\msys64
+2. Download [msys2-x86_64-20250622.exe](https://www.msys2.org/) and install it at C:\msys64
    and we can see command console window after installing it like the below;
    ---
    ![msys2.png](msys2.png)
