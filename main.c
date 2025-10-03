@@ -31,6 +31,8 @@
 #include "socket_programmingEx.h"
 #include "makefile_exampleEx.h"
 #include "error_handlingEx.h"
+#include "snake_gameEx.h"
+#include "tetris_gameEx.h"
 
 // --- Type Definitions for a Data-Driven Menu ---
 
@@ -84,6 +86,8 @@ MenuItem menu_items[] = {
     {"Networking Basics", networking_basicsEx},
     {"Socket Programming", socket_programmingEx},
     {"Makefile Example", makefile_exampleEx},
+    {"** Snake Game **", snake_gameEx},
+    {"** Tetris Game **", tetris_gameEx},
 };
 
 // Calculate the number of items in the menu array.

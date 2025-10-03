@@ -25,6 +25,8 @@ C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개�
 - [Stack Data Structure](stack.c)
 - [Queue Data Structure](queue.c)
 - [Linked List Structure](linked_list.c)
+- [Snake Game](snake_gameEx.c)
+- [Tetris Game](tetris_gameEx.c)
 - [Double Linked List](double_linked_list.c)
 - [Circular Linked List](circular_linked_list.c)
 - [Binary Trees](binary_trees.c)
@@ -48,13 +50,13 @@ C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개�
 To compile and run the examples, you can use the following commands in your terminal:
 
 ```bash
-$ make       # This will compile all examples
-$ ./main.exe # This will run the main example
+$ make       # This will compile all examples and create the 'main' executable
+$ ./main     # This will run the main example
 ```
 
 ## Getting Started
 1. Clone the repository to your local machine.
 2. Navigate to the directory containing the examples.
 3. Compile all example using `make` command.
-4. Run the compiled executable ( ./main.exe )to see the output.
+4. Run the compiled executable ( ./main ) to see the output.
 ---
