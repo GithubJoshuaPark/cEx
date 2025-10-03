@@ -21,6 +21,7 @@ C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개�
 - [Memory Management](memory_management.c)
 - [File I/O](file_io.c)
 - [Dynamic Memory Allocation](dynamic_memory.c)
+- [Dynamic 2D Array Allocation](dynamic_2d_arrayEx.c)
 - [Stack Data Structure](stack.c)
 - [Queue Data Structure](queue.c)
 - [Linked List Structure](linked_list.c)

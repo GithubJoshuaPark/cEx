@@ -12,6 +12,7 @@
 #include "memory_managementEx.h"
 #include "file_ioEx.h"
 #include "dynamic_memory_allocationEx.h"
+#include "dynamic_2d_arrayEx.h" // New include
 #include "stack_data_structureEx.h"
 #include "queue_data_structureEx.h"
 #include "linked_list_data_structureEx.h"
@@ -64,6 +65,7 @@ MenuItem menu_items[] = {
     {"Memory Management", memory_managementEx},
     {"File I/O", file_ioEx},
     {"Dynamic Memory Allocation", dynamic_memory_allocationEx},
+    {"Dynamic 2D Array Allocation", dynamic_2d_arrayEx}, // New menu item
     {"Stack Data Structure", stack_data_structureEx},
     {"Queue Data Structure", queue_data_structureEx},
     {"Linked List Data Structure", linked_list_data_structureEx},
