@@ -47,12 +47,12 @@ int tetris_getch() { return getchar(); }
 #define BLOCK_SIZE 4
 
 // Game state variables
-char board[BOARD_HEIGHT][BOARD_WIDTH];
-int score = 0;
-bool gameOver = false;
+static char board[BOARD_HEIGHT][BOARD_WIDTH];
+static int score = 0;
+static bool gameOver = false;
 
 // Tetromino shapes (I, O, T, L, J, S, Z)
-const char tetrominoes[7][BLOCK_SIZE][BLOCK_SIZE] = {
+static const char tetrominoes[7][BLOCK_SIZE][BLOCK_SIZE] = {
     {" I  ", " I  ", " I  ", " I  "}, // I
     {"    ", " OO ", " OO ", "    "}, // O
     {" T  ", "TTT ", "    ", "    "}, // T
@@ -69,9 +69,9 @@ typedef struct {
     int rotation;
 } Tetromino;
 
-Tetromino current;
+static Tetromino current;
 
-void rotate(Tetromino *t) {
+static void rotate(Tetromino *t) {
     char temp[BLOCK_SIZE][BLOCK_SIZE];
     for (int i = 0; i < BLOCK_SIZE; i++) {
         for (int j = 0; j < BLOCK_SIZE; j++) {
@@ -85,7 +85,7 @@ void rotate(Tetromino *t) {
     }
 }
 
-bool checkCollision(const Tetromino *t) {
+static bool checkCollision(const Tetromino *t) {
     for (int i = 0; i < BLOCK_SIZE; i++) {
         for (int j = 0; j < BLOCK_SIZE; j++) {
             if (t->shape[i][j] != ' ') {
@@ -103,7 +103,7 @@ bool checkCollision(const Tetromino *t) {
     return false;
 }
 
-void newTetromino() {
+static void newTetromino() {
     current.type = rand() % 7;
     current.x = BOARD_WIDTH / 2 - 2;
     current.y = 0;
@@ -120,7 +120,7 @@ void newTetromino() {
     }
 }
 
-void placeTetromino() {
+static void placeTetromino() {
     for (int i = 0; i < BLOCK_SIZE; i++) {
         for (int j = 0; j < BLOCK_SIZE; j++) {
             if (current.shape[i][j] != ' ') {
@@ -134,7 +134,7 @@ void placeTetromino() {
     }
 }
 
-void clearLines() {
+static void clearLines() {
     int linesCleared = 0;
     for (int i = BOARD_HEIGHT - 1; i >= 0; i--) {
         bool lineFull = true;
@@ -161,7 +161,7 @@ void clearLines() {
     score += linesCleared * linesCleared * 100; // Score based on lines cleared
 }
 
-void drawBoard() {
+static void drawBoard() {
     tetris_clear_screen();
     char tempBoard[BOARD_HEIGHT][BOARD_WIDTH];
     for (int i = 0; i < BOARD_HEIGHT; i++) {
@@ -201,7 +201,7 @@ void drawBoard() {
     printf("Controls: A(Left), D(Right), S(Down), W(Rotate), X(Quit)\n");
 }
 
-void handleInput() {
+static void handleInput() {
     if (tetris_kbhit()) {
         int key = tetris_getch();
         Tetromino temp = current;
@@ -235,7 +235,7 @@ void handleInput() {
     }
 }
 
-void updateGame() {
+static void updateGame() {
     Tetromino temp = current;
     temp.y++;
 

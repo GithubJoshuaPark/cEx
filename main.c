@@ -33,6 +33,7 @@
 #include "error_handlingEx.h"
 #include "snake_gameEx.h"
 #include "tetris_gameEx.h"
+#include "breakout_gameEx.h"
 
 // --- Type Definitions for a Data-Driven Menu ---
 
@@ -88,6 +89,7 @@ MenuItem menu_items[] = {
     {"Makefile Example", makefile_exampleEx},
     {"** Snake Game **", snake_gameEx},
     {"** Tetris Game **", tetris_gameEx},
+    {"** Breakout Game **", breakout_gameEx},
 };
 
 // Calculate the number of items in the menu array.

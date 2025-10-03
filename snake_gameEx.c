@@ -53,15 +53,15 @@ int _getch() {
 #define WIDTH 20
 #define HEIGHT 20
 
-bool gameOver;
-int x, y, fruitX, fruitY, score;
-int tailX[100], tailY[100];
-int nTail;
+static bool gameOver;
+static int x, y, fruitX, fruitY, score;
+static int tailX[100], tailY[100];
+static int nTail;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
-enum eDirection dir;
+static enum eDirection dir;
 
 // Setup initial game state
-void Setup() {
+static void Setup() {
     srand(time(NULL));
     gameOver = false;
     dir = STOP;
@@ -74,7 +74,7 @@ void Setup() {
 }
 
 // Draw the game board, snake, and fruit
-void Draw() {
+static void Draw() {
     clear_screen_game();
     for (int i = 0; i < WIDTH + 2; i++) printf("#");
     printf("\n");
@@ -110,7 +110,7 @@ void Draw() {
 }
 
 // Handle user input
-void Input() {
+static void Input() {
     if (_kbhit()) {
         switch (_getch()) {
             case 'a':
@@ -133,7 +133,7 @@ void Input() {
 }
 
 // Update game logic (move snake, check for collisions, etc.)
-void Logic() {
+static void Logic() {
     // Update tail positions
     int prevX = tailX[0];
     int prevY = tailY[0];

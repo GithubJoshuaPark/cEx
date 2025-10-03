@@ -27,6 +27,7 @@ C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개�
 - [Linked List Structure](linked_list.c)
 - [Snake Game](snake_gameEx.c)
 - [Tetris Game](tetris_gameEx.c)
+- [Breakout Game](breakout_gameEx.c)
 - [Double Linked List](double_linked_list.c)
 - [Circular Linked List](circular_linked_list.c)
 - [Binary Trees](binary_trees.c)
