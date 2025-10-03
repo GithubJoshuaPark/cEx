@@ -1,0 +1,14 @@
+# Executables
+main
+main.exe
+a.out
+
+# Object files
+*.o
+
+# Debugging files
+*.dSYM/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
