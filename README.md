@@ -42,25 +42,13 @@ This repository contains various examples of C programming language code snippet
 To compile and run the examples, you can use the following commands in your terminal:
 
 ```bash
-$ clang -o main main.c hello.c
-$ ./main
-
-(base)  ✘  ~/Desktop/DevAndStudy/cEx/cppEx ./main
-Hello, World!
-
+$ make       # This will compile all examples
+$ ./main.exe # This will run the main example
 ```
 
 ## Getting Started
 1. Clone the repository to your local machine.
 2. Navigate to the directory containing the examples.
-3. Compile the desired example using a C compiler (e.g., `gcc` or `clang`).
-4. Run the compiled executable to see the output.
-
+3. Compile all example using `make` command.
+4. Run the compiled executable ( ./main.exe )to see the output.
 ---
-
-## Contributing
-Contributions are welcome! If you have any improvements or additional examples, feel free to create a pull request.
-
----
-
-## Detail Explanations for some files

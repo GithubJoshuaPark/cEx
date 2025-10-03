@@ -38,11 +38,8 @@ void enqueue(Queue *q, int value) {
         q->rear = (q->rear + 1) % QUEUE_SIZE; // Wrap around
         q->items[q->rear] = value;
         q->count++;
-        printf("Enqueued %d into the queue. Now c->count: %d, c->front: %d, c->rear: %d.\n"
-                , value
-                , q->count
-                , q->front
-                , q->rear);
+        printf("Enqueued %d. (Count: %d, Front: %d, Rear: %d)\n"
+                , value, q->count, q->front, q->rear);
     }
 }
 
@@ -55,6 +52,11 @@ int dequeue(Queue *q) {
         int item = q->items[q->front];
         q->front = (q->front + 1) % QUEUE_SIZE; // Wrap around
         q->count--;
+        printf("Dequeued %d. (Count: %d, Front: %d, Rear: %d)\n"
+                , item
+                , q->count
+                , q->front
+                , q->rear);
         return item;
     }
 }
@@ -70,12 +72,7 @@ void queue_data_structureEx(void) {
     enqueue(&myQueue, 30);
 
     // Dequeue 10
-    printf("Dequeued %d from the queue. Now c->count: %d, c->front: %d, c->rear: %d.\n"
-               , dequeue(&myQueue)
-               , myQueue.count
-               , myQueue.front
-               , myQueue.rear
-            );
+    dequeue(&myQueue);
 
     enqueue(&myQueue, 40);
     enqueue(&myQueue, 50);
@@ -83,11 +80,6 @@ void queue_data_structureEx(void) {
 
     printf("\nDequeuing remaining items:\n");
     while (!isQueueEmpty(&myQueue)) {
-        printf("Dequeued %d from the queue. Now c->count: %d, c->front: %d, c->rear: %d.\n"
-               , dequeue(&myQueue)
-               , myQueue.count
-               , myQueue.front
-               , myQueue.rear
-            );
+        dequeue(&myQueue);
     }
 }
