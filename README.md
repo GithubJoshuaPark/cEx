@@ -62,3 +62,5 @@ $ ./main     # This will run the main example
 3. Compile all example using `make` command.
 4. Run the compiled executable ( ./main ) to see the output.
 ---
+
+![memory_segment](memory_segment.png)
