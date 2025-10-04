@@ -6,7 +6,7 @@
 #define QUEUE_SIZE 5
 
 // A structure to represent a circular queue
-typedef struct {
+typedef struct Queue{
     int items[QUEUE_SIZE];
     int front;
     int rear;

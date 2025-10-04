@@ -6,7 +6,7 @@
 #define STACK_SIZE 5
 
 // A structure to represent a stack
-typedef struct {
+typedef struct Stack{
     int items[STACK_SIZE];
     int top; // Index of the top element
 } Stack;

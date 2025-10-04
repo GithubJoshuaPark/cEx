@@ -46,7 +46,7 @@ typedef void (*ExampleFunc)(void);
 /**
  * @brief A structure to hold the information for a single menu item.
  */
-typedef struct {
+typedef struct MenuItem{
     const char* description; // The text to display in the menu
     ExampleFunc function;    // A pointer to the function to execute
 } MenuItem;
