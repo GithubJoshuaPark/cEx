@@ -11,7 +11,8 @@ typedef struct Node {
 } Node;
 
 // Function to create a new node
-Node* createNode(int data) {
+// 함수를 해당 파일 내부에서만 사용하도록 static 키워드를 붙여주는 것
+static Node* createNode(int data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
     if (newNode == NULL) {
         printf("Memory allocation failed!\n");

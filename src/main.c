@@ -22,6 +22,7 @@
 #include "hash_table_data_structureEx.h"
 #include "graphs_data_structureEx.h"
 #include "searching_algorithmsEx.h"
+#include "taskManagementEx.h"
 #include "sorting_algorithmsEx.h"
 #include "recursion_examplesEx.h"
 #include "bit_manipulationEx.h"
@@ -77,6 +78,7 @@ MenuItem menu_items[] = {
     {"Binary Tree Data Structure", binary_tree_data_structureEx},
     {"Hash Table Data Structure", hash_table_data_structureEx},
     {"Graphs Data Structure", graphs_data_structureEx},
+    {"Task Management (Linked List)", taskManagementEx},
     {"Searching Algorithms", searching_algorithmsEx},
     {"Sorting Algorithms", sorting_algorithmsEx},
     {"Recursion Examples", recursion_examplesEx},

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "description": "God will make a way for me",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "description": "Thank God",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "description": "Give Thanks",
+    "completed": false
+  }
+]
