@@ -8,40 +8,62 @@ C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개�
 
 ---
 
+```
+# project structure
+    cEx/
+    ├── src/
+    │   ├── main.c
+    │   ├── hello.c
+    │   ├── data_typesEx.c
+    │   └── ... (모든 .c 파일)
+    ├── include/
+    │   ├── hello.h
+    │   ├── data_typesEx.h
+    │   └── ... (모든 .h 파일)
+    ├── bin/
+    │   └── (비어 있음)
+    ├── Makefile
+    ├── Makefile.mk
+    └── README.md
+    ...
+
+```
+
+
 ## Contents
 - [Hello World](hello.c)
-- [Data Types](data_types.c)
-- [Functions](functions.c)
-- [Pointers](pointers.c)
-- [Arrays](arrays.c)
-- [Structures](structures.c)
-- [Unions](unions.c)
-- [Enums](enums.c)
-- [Typedefs](typedefs.c)
-- [Memory Management](memory_management.c)
-- [File I/O](file_io.c)
-- [Dynamic Memory Allocation](dynamic_memory.c)
-- [Dynamic 2D Array Allocation](dynamic_2d_arrayEx.c)
-- [Stack Data Structure](stack.c)
-- [Queue Data Structure](queue.c)
-- [Linked List Structure](linked_list.c)
-- [Double Linked List](double_linked_list.c)
-- [Circular Linked List](circular_linked_list.c)
-- [Binary Trees](binary_trees.c)
-- [Hash Tables](hash_tables.c)
-- [Graphs](graphs.c)
-- [Searching Algorithms](searching.c)
-- [Sorting Algorithms](sorting.c)
-- [Recursion Examples](recursion_examples.c)
-- [Bit Manipulation](bit_manipulation.c)
-- [Preprocessor Directives](preprocessor.c)
-- [Error Handling](error_handling.c)
-- [Multithreading](multithreading.c)
-- [Networking](networking.c)
-- [Socket Programming](socket_programming.c)
-- [Snake Game](snake_gameEx.c)
-- [Tetris Game](tetris_gameEx.c)
-- [Breakout Game](breakout_gameEx.c)
+- [Data Types](data_typesEx.c)
+- [Functions](functionsEx.c)
+- [Pointers](pointersEx.c)
+- [Arrays](arraysEx.c)
+- [Structures](structuresEx.c)
+- [Unions](unionsEx.c)
+- [Enums](enumsEx.c)
+- [Typedefs](typedefsEx.c)
+- [Memory Management](memory_managementEx.c)
+- [File I/O](file_ioEx.c)
+- [Dynamic Memory Allocation](dynamic_memoryEx.c)
+- [Dynamic 2D Array Allocation](dynamic_2d_arrayExEx.c)
+- [Stack Data Structure](stackEx.c)
+- [Queue Data Structure](queueEx.c)
+- [Linked List Structure](linked_listEx.c)
+- [Double Linked List](double_linked_listEx.c)
+- [Circular Linked List](circular_linked_listEx.c)
+- [Binary Trees](binary_treesEx.c)
+- [Hash Tables](hash_tablesEx.c)
+- [Graphs](graphsEx.c)
+- [Searching Algorithms](searchingEx.c)
+- [Sorting Algorithms](sortingEx.c)
+- [Recursion Examples](recursion_examplesEx.c)
+- [Bit Manipulation](bit_manipulationEx.c)
+- [Preprocessor Directives](preprocessorEx.c)
+- [Error Handling](error_handlingEx.c)
+- [Multithreading](multithreadingEx.c)
+- [Networking](networkingEx.c)
+- [Socket Programming](socket_programmingEx.c)
+- [Snake Game](snake_gameExEx.c)
+- [Tetris Game](tetris_gameExEx.c)
+- [Breakout Game](breakout_gameExEx.c)
 - [Makefile Example](Makefile)
 - [README](README.md)
 
