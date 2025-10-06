@@ -13,5 +13,10 @@
     "id": 3,
     "description": "Give Thanks",
     "completed": false
+  },
+  {
+    "id": 4,
+    "description": "Today is Chusuk",
+    "completed": true
   }
 ]
