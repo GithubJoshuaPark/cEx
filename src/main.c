@@ -117,8 +117,9 @@ void show_menu(void) {
     for (int i = 0; i < num_menu_items; i++) {
         printf("%2d. %s\n", i + 1, menu_items[i].description);
     }
-    printf("99. Exit\n");
     printf("-------------------------------------\n");
+    printf("99. Exit\n");
+    printf("=====================================\n");
 }
 
 int main(void) {
