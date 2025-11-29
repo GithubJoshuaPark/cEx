@@ -48,3 +48,6 @@ $(BIN_DIR)/%.o: $(SRC_DIR)/%.c
 clean:
 	@echo "Cleaning up build files..."
 	rm -rf $(BIN_DIR)
+copy_main:
+	@echo "Copying main executable to current directory..."
+	cp $(TARGET) .	

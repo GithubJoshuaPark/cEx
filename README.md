@@ -74,7 +74,8 @@ C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개�
 To compile and run the examples, you can use the following commands in your terminal:
 
 ```bash
-$ make       # This will compile all examples and create the 'main' executable
+$ make           # This will compile all examples and create the 'main' executable
+$ make copy_main # This will copy the 'main' executable to the current directory
 $ ./main     # This will run the main example
 ```
 
