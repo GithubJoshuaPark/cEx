@@ -151,6 +151,28 @@ $ ./main     # This will run the main example
 - 각 소스 파일을 `bin/` 디렉터리에 오브젝트 파일(`.o`)로 컴파일
 - 모든 오브젝트 파일을 링크하여 최종 실행 파일 `bin/main` 생성
 
+### ⚙️ 개발 환경 설정 (IntelliSense)
+
+이 프로젝트는 `Makefile`을 기반으로 빌드되지만, 최신 에디터(VS Code, Antigravity 등)가 코드 구조를 이해하고 자동 완성을 제공하기 위해서는 `compile_commands.json` 파일이 필요할 수 있습니다.
+
+#### `generate_compile_commands.py` 스크립트
+
+이 파이썬 스크립트는 프로젝트의 소스 파일들을 스캔하여 `compile_commands.json` 파일을 자동으로 생성해줍니다.
+
+**1. 왜 필요한가요?**
+- 에디터가 헤더 파일 경로(`include/`)를 찾지 못해 빨간 줄(에러 표시)이 뜨는 문제를 해결합니다.
+- 코드 자동 완성, 정의로 이동 등 IntelliSense 기능을 활성화합니다.
+
+**2. 언제 실행하나요?**
+- 프로젝트를 처음 클론했을 때
+- 새로운 `.c` 소스 파일을 추가했을 때
+
+**3. 실행 방법:**
+터미널에서 다음 명령어를 실행하세요:
+```bash
+python3 generate_compile_commands.py
+```
+
 ### 💡 설계 철학
 
 1. **모듈화**: 각 주제별로 독립적인 `.c`/`.h` 파일 쌍으로 구성
