@@ -11,3 +11,6 @@ a.out
 # Editor/IDE specific files
 .vscode/
 .idea/
+
+.cashe/
+compile_commands.json
