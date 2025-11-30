@@ -1,192 +1,147 @@
-# C language examples
-This repository contains various examples of C programming language code snippets and projects. Each example is designed to demonstrate different features and functionalities of the C language.
+# C Language Examples (C-ex)
 
-저는 현장에서 java, c#, javascript, python 등 다양한 언어를 사용하고 있지만, 가장 기본이 되는 언어는 C언어라고 생각합니다.
-C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개발 등 다양한 분야에서 사용되며, 다른 언어의 기초가 되는 중요한 언어입니다.
-따라서 C언어를 잘 이해하고 활용하는 것은 프로그래밍 전반에 큰 도움이 됩니다.
-이 저장소는 C언어의 다양한 예제를 통해 학습하고자 하는 분들에게 도움이 되고자 합니다.
+이 저장소는 C 언어의 다양한 기능, 자료구조, 알고리즘, 그리고 시스템 프로그래밍을 학습하기 위한 종합 예제 모음집입니다.
+
+> "저는 현장에서 Java, C#, JavaScript, Python 등 다양한 언어를 사용하고 있지만, 가장 기본이 되는 언어는 C언어라고 생각합니다. C언어는 시스템 프로그래밍, 임베디드 시스템, 운영체제 개발 등 다양한 분야에서 사용되며, 다른 언어의 기초가 되는 중요한 언어입니다."
 
 ---
 
-```
-# project structure
-    cEx/
-    ├── src/
-    │   ├── main.c
-    │   ├── hello.c
-    │   ├── data_typesEx.c
-    │   └── ... (모든 .c 파일)
-    ├── include/
-    │   ├── hello.h
-    │   ├── data_typesEx.h
-    │   └── ... (모든 .h 파일)
-    ├── bin/
-    │   └── (비어 있음)
-    ├── Makefile
-    ├── Makefile.mk
-    └── README.md
-    ...
+## 📚 목차 (Contents)
 
-```
-
-
-## Contents
-- [Hello World](hello.c)
-- [Data Types](data_typesEx.c)
-- [Functions](functionsEx.c)
-- [Pointers](pointersEx.c)
-- [Arrays](arraysEx.c)
-- [Structures](structuresEx.c)
-- [Unions](unionsEx.c)
-- [Enums](enumsEx.c)
-- [Typedefs](typedefsEx.c)
-- [Memory Management](memory_managementEx.c)
-- [File I/O](file_ioEx.c)
-- [Dynamic Memory Allocation](dynamic_memoryEx.c)
-- [Dynamic 2D Array Allocation](dynamic_2d_arrayExEx.c)
-- [Stack Data Structure](stackEx.c)
-- [Queue Data Structure](queueEx.c)
-- [Linked List Structure](linked_listEx.c)
-- [Double Linked List](double_linked_listEx.c)
-- [Circular Linked List](circular_linked_listEx.c)
-- [Binary Trees](binary_treesEx.c)
-- [Hash Tables](hash_tablesEx.c)
-- [Graphs](graphsEx.c)
-- [Searching Algorithms](searchingEx.c)
-- [Sorting Algorithms](sortingEx.c)
-- [Recursion Examples](recursion_examplesEx.c)
-- [Bit Manipulation](bit_manipulationEx.c)
-- [Preprocessor Directives](preprocessorEx.c)
-- [Error Handling](error_handlingEx.c)
-- [Multithreading](multithreadingEx.c)
-- [Networking](networkingEx.c)
-- [Socket Programming](socket_programmingEx.c)
-- [Snake Game](snake_gameExEx.c)
-- [Tetris Game](tetris_gameExEx.c)
-- [Breakout Game](breakout_gameExEx.c)
-- [Makefile Example](Makefile)
-- [README](README.md)
-
+1. [프로젝트 구조 (Project Structure)](#-프로젝트-구조-project-structure)
+2. [시작하기 (Getting Started)](#-시작하기-getting-started)
+3. [개발 환경 설정 (Development Environment)](#-개발-환경-설정-development-environment)
+4. [예제 목록 (Example List)](#-예제-목록-example-list)
+5. [프로젝트 상세 (Project Details)](#-프로젝트-상세-project-details)
 
 ---
 
-## compile and run
-To compile and run the examples, you can use the following commands in your terminal:
+## 📂 프로젝트 구조 (Project Structure)
+
+```
+cEx/
+├── src/                # 소스 코드 (.c)
+│   ├── main.c          # 메인 메뉴 프로그램
+│   ├── hello.c
+│   └── ...
+├── include/            # 헤더 파일 (.h)
+│   ├── hello.h
+│   └── ...
+├── bin/                # 컴파일된 실행 파일 및 객체 파일 (.o)
+├── Makefile            # 메인 빌드 스크립트
+├── Makefile.mk         # 빌드 설정 파일
+├── generate_compile_commands.py # IntelliSense 설정 스크립트
+└── README.md           # 프로젝트 문서
+```
+
+---
+
+## 🚀 시작하기 (Getting Started)
+
+### 1. 클론 (Clone)
+```bash
+git clone https://github.com/GithubJoshuaPark/cEx.git
+cd cEx
+```
+
+### 2. 빌드 및 실행 (Build & Run)
+터미널에서 `make` 명령어를 사용하여 전체 프로젝트를 빌드하고 실행할 수 있습니다.
 
 ```bash
-$ make           # This will compile all examples and create the 'main' executable
-$ make copy_main # This will copy the 'main' executable to the current directory
-$ ./main     # This will run the main example
+# 전체 빌드 및 실행 파일 생성 (bin/main)
+make
+
+# 실행 파일을 현재 디렉토리로 복사 (선택 사항)
+make copy_main
+
+# 프로그램 실행
+./main
 ```
 
-## Getting Started
-1. Clone the repository to your local machine.
-2. Navigate to the directory containing the examples.
-3. Compile all example using `make` command.
-4. Run the compiled executable ( ./main ) to see the output.
+실행하면 대화형 메뉴가 나타나며, 원하는 예제의 번호를 입력하여 실행할 수 있습니다.
+
 ---
 
-## 📋 프로젝트 개요
+## ⚙️ 개발 환경 설정 (Development Environment)
 
-이 프로젝트는 **C 언어 학습을 위한 종합 예제 모음집**입니다. 다양한 C 프로그래밍 개념과 기능을 실습할 수 있도록 구성되어 있습니다.
+VS Code나 Antigravity 같은 최신 에디터에서 **자동 완성(IntelliSense)** 기능을 제대로 사용하려면 `compile_commands.json` 파일이 필요합니다.
 
-### 🎯 주요 특징
+### `generate_compile_commands.py`
 
-#### 1. 인터랙티브 메뉴 시스템
-- `main.c`는 데이터 기반 메뉴 시스템을 구현
-- 함수 포인터 배열(`MenuItem` 구조체)을 사용하여 35개의 예제를 관리
-- 사용자가 번호를 선택하면 해당 예제가 실행되는 방식
-- 새로운 예제 추가 시 `menu_items` 배열에 한 줄만 추가하면 됨
+이 스크립트는 프로젝트의 소스 파일들을 스캔하여 `compile_commands.json` 파일을 자동으로 생성해줍니다.
 
-#### 2. 포괄적인 학습 내용
+**왜 필요한가요?**
+- 에디터가 헤더 파일 경로(`include/`)를 찾지 못해 발생하는 빨간 줄(에러 표시) 제거
+- 코드 자동 완성 및 정의로 이동(Go to Definition) 기능 활성화
 
-**기초 개념:**
-- Hello World, Data Types, Functions, Pointers, Arrays
-- Structures, Unions, Enums, Typedefs
+**사용 방법:**
+새로운 `.c` 파일을 추가하거나 프로젝트를 처음 열었을 때 한 번 실행해주세요.
 
-**메모리 관리:**
-- Memory Management
-- Dynamic Memory Allocation
-- Dynamic 2D Array Allocation
-
-**자료구조:**
-- Stack, Queue
-- Linked List (단일, 이중, 원형)
-- Binary Trees
-- Hash Tables
-- Graphs
-
-**알고리즘:**
-- Searching Algorithms (검색)
-- Sorting Algorithms (정렬)
-- Recursion Examples (재귀)
-
-**고급 주제:**
-- File I/O
-- Bit Manipulation
-- Preprocessor Directives
-- Error Handling
-- Multithreading (멀티스레딩)
-- Networking Basics
-- Socket Programming
-
-**실전 프로젝트:**
-- 🐍 Snake Game
-- 🎮 Tetris Game
-- 🧱 Breakout Game
-- 📋 Task Management System
-
-### 🛠️ 빌드 시스템
-
-**Makefile 구성:**
-- **컴파일러**: `clang`
-- **컴파일 플래그**:
-  - `-Wall`: 모든 경고 활성화
-  - `-g`: 디버깅 정보 포함
-  - `-pthread`: 멀티스레딩 지원
-  - `-Iinclude`: 헤더 파일 경로 지정
-
-**자동 빌드 프로세스:**
-- `src/` 디렉터리의 모든 `.c` 파일을 자동으로 탐지
-- 각 소스 파일을 `bin/` 디렉터리에 오브젝트 파일(`.o`)로 컴파일
-- 모든 오브젝트 파일을 링크하여 최종 실행 파일 `bin/main` 생성
-
-### ⚙️ 개발 환경 설정 (IntelliSense)
-
-이 프로젝트는 `Makefile`을 기반으로 빌드되지만, 최신 에디터(VS Code, Antigravity 등)가 코드 구조를 이해하고 자동 완성을 제공하기 위해서는 `compile_commands.json` 파일이 필요할 수 있습니다.
-
-#### `generate_compile_commands.py` 스크립트
-
-이 파이썬 스크립트는 프로젝트의 소스 파일들을 스캔하여 `compile_commands.json` 파일을 자동으로 생성해줍니다.
-
-**1. 왜 필요한가요?**
-- 에디터가 헤더 파일 경로(`include/`)를 찾지 못해 빨간 줄(에러 표시)이 뜨는 문제를 해결합니다.
-- 코드 자동 완성, 정의로 이동 등 IntelliSense 기능을 활성화합니다.
-
-**2. 언제 실행하나요?**
-- 프로젝트를 처음 클론했을 때
-- 새로운 `.c` 소스 파일을 추가했을 때
-
-**3. 실행 방법:**
-터미널에서 다음 명령어를 실행하세요:
 ```bash
 python3 generate_compile_commands.py
 ```
 
-### 💡 설계 철학
+---
 
-1. **모듈화**: 각 주제별로 독립적인 `.c`/`.h` 파일 쌍으로 구성
-2. **확장성**: 새로운 예제 추가가 용이한 데이터 기반 아키텍처
-3. **크로스 플랫폼**: Windows(`cls`)와 Unix/macOS(`clear`) 모두 지원
-4. **실용성**: 이론뿐만 아니라 실제 게임과 네트워크 프로그래밍까지 포함
+## 📝 예제 목록 (Example List)
 
-### 📊 프로젝트 통계
+이 프로젝트는 30개 이상의 다양한 예제를 포함하고 있습니다.
 
-- **총 소스 파일**: 36개 (.c 파일)
-- **총 헤더 파일**: 37개 (.h 파일)
-- **예제 개수**: 35개
-- **게임 프로젝트**: 3개 (Snake, Tetris, Breakout)
+### 🔹 기초 (Basics)
+- [Hello World](src/hello.c)
+- [Data Types](src/data_typesEx.c)
+- [Functions](src/functionsEx.c)
+- [Pointers](src/pointersEx.c)
+- [Arrays](src/arraysEx.c)
+- [Structures](src/structuresEx.c)
+- [Unions](src/unionsEx.c)
+- [Enums](src/enumsEx.c)
+- [Typedefs](src/typedefsEx.c)
+
+### 🔹 메모리 관리 (Memory)
+- [Memory Management](src/memory_managementEx.c)
+- [Dynamic Memory Allocation](src/dynamic_memory_allocationEx.c)
+- [Dynamic 2D Array Allocation](src/dynamic_2d_arrayEx.c)
+
+### 🔹 자료구조 (Data Structures)
+- [Stack](src/stack_data_structureEx.c)
+- [Queue](src/queue_data_structureEx.c)
+- [Linked List](src/linked_list_data_structureEx.c) (Single, Double, Circular)
+- [Binary Trees](src/binary_tree_data_structureEx.c)
+- [Hash Tables](src/hash_table_data_structureEx.c)
+- [Graphs](src/graphs_data_structureEx.c)
+
+### 🔹 알고리즘 (Algorithms)
+- [Searching](src/searching_algorithmsEx.c)
+- [Sorting](src/sorting_algorithmsEx.c)
+- [Recursion](src/recursion_examplesEx.c)
+- [Bit Manipulation](src/bit_manipulationEx.c)
+
+### 🔹 시스템 & 고급 (System & Advanced)
+- [File I/O](src/file_ioEx.c)
+- [Preprocessor Directives](src/preprocessor_directivesEx.c)
+- [Error Handling](src/error_handlingEx.c)
+- [Multithreading](src/multithreadingEx.c)
+- [Networking Basics](src/networking_basicsEx.c)
+- [Socket Programming](src/socket_programmingEx.c)
+- [Task Management System](src/taskManagementEx.c)
+
+### 🎮 게임 프로젝트 (Games)
+- [Snake Game](src/snake_gameEx.c)
+- [Tetris Game](src/tetris_gameEx.c)
+- [Breakout Game](src/breakout_gameEx.c)
 
 ---
 
+## 💡 프로젝트 상세 (Project Details)
+
+### 인터랙티브 메뉴 시스템
+`src/main.c`는 함수 포인터 배열을 사용한 **데이터 기반(Data-Driven)** 구조로 설계되었습니다. 새로운 예제를 추가하려면 `menu_items` 배열에 한 줄만 추가하면 자동으로 메뉴에 반영됩니다.
+
+### 빌드 시스템 (Makefile)
+- **컴파일러**: `clang` (기본값)
+- **플래그**: `-Wall` (경고 표시), `-g` (디버깅), `-pthread` (멀티스레딩), `-Iinclude` (헤더 경로)
+- **자동화**: `src/` 폴더의 모든 `.c` 파일을 자동으로 감지하여 빌드합니다.
+
+### 메모리 구조
 ![memory_segment](memory_segment.png)
