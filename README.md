@@ -86,4 +86,85 @@ $ ./main     # This will run the main example
 4. Run the compiled executable ( ./main ) to see the output.
 ---
 
+## 📋 프로젝트 개요
+
+이 프로젝트는 **C 언어 학습을 위한 종합 예제 모음집**입니다. 다양한 C 프로그래밍 개념과 기능을 실습할 수 있도록 구성되어 있습니다.
+
+### 🎯 주요 특징
+
+#### 1. 인터랙티브 메뉴 시스템
+- `main.c`는 데이터 기반 메뉴 시스템을 구현
+- 함수 포인터 배열(`MenuItem` 구조체)을 사용하여 35개의 예제를 관리
+- 사용자가 번호를 선택하면 해당 예제가 실행되는 방식
+- 새로운 예제 추가 시 `menu_items` 배열에 한 줄만 추가하면 됨
+
+#### 2. 포괄적인 학습 내용
+
+**기초 개념:**
+- Hello World, Data Types, Functions, Pointers, Arrays
+- Structures, Unions, Enums, Typedefs
+
+**메모리 관리:**
+- Memory Management
+- Dynamic Memory Allocation
+- Dynamic 2D Array Allocation
+
+**자료구조:**
+- Stack, Queue
+- Linked List (단일, 이중, 원형)
+- Binary Trees
+- Hash Tables
+- Graphs
+
+**알고리즘:**
+- Searching Algorithms (검색)
+- Sorting Algorithms (정렬)
+- Recursion Examples (재귀)
+
+**고급 주제:**
+- File I/O
+- Bit Manipulation
+- Preprocessor Directives
+- Error Handling
+- Multithreading (멀티스레딩)
+- Networking Basics
+- Socket Programming
+
+**실전 프로젝트:**
+- 🐍 Snake Game
+- 🎮 Tetris Game
+- 🧱 Breakout Game
+- 📋 Task Management System
+
+### 🛠️ 빌드 시스템
+
+**Makefile 구성:**
+- **컴파일러**: `clang`
+- **컴파일 플래그**:
+  - `-Wall`: 모든 경고 활성화
+  - `-g`: 디버깅 정보 포함
+  - `-pthread`: 멀티스레딩 지원
+  - `-Iinclude`: 헤더 파일 경로 지정
+
+**자동 빌드 프로세스:**
+- `src/` 디렉터리의 모든 `.c` 파일을 자동으로 탐지
+- 각 소스 파일을 `bin/` 디렉터리에 오브젝트 파일(`.o`)로 컴파일
+- 모든 오브젝트 파일을 링크하여 최종 실행 파일 `bin/main` 생성
+
+### 💡 설계 철학
+
+1. **모듈화**: 각 주제별로 독립적인 `.c`/`.h` 파일 쌍으로 구성
+2. **확장성**: 새로운 예제 추가가 용이한 데이터 기반 아키텍처
+3. **크로스 플랫폼**: Windows(`cls`)와 Unix/macOS(`clear`) 모두 지원
+4. **실용성**: 이론뿐만 아니라 실제 게임과 네트워크 프로그래밍까지 포함
+
+### 📊 프로젝트 통계
+
+- **총 소스 파일**: 36개 (.c 파일)
+- **총 헤더 파일**: 37개 (.h 파일)
+- **예제 개수**: 35개
+- **게임 프로젝트**: 3개 (Snake, Tetris, Breakout)
+
+---
+
 ![memory_segment](memory_segment.png)
